@@ -13,30 +13,18 @@ copy this below from https://github.com/groue/GRMustache/blob/master/src/classes
      *
      * Faking va_list as in http://stackoverflow.com/questions/688070/is-there-any-way-to-pass-an-nsarray-to-a-method-that-expects-a-variable-number-o
      * used to compile, but it does no longer:
-     
      *
      *     id fake_va_list[arguments.count];
-     
      *     [arguments getObjects:fake_va_list];
-     
      *     rendering = [[[NSString alloc] initWithFormat:format arguments:(va_list)fake_va_list] autorelease];
-     
      *                                                                    ^        ~~~~~~~~~~~~
-     
      *     error: used type 'va_list' (aka '__builtin_va_list') where arithmetic or pointer type is required
-     
      *
-     
      * Removing the (va_list) cast only generates a warning, but the code crashes when run.
-     
      *
-     
      * NSInvocation? NSInvocation does not support variadic functions.
-     
      *
-     
      * So I guess we have to do it by hand :-(
-     
      */
     NSUInteger count = arguments.count;
 
