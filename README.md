@@ -6,7 +6,9 @@ ceate NSString using stringWithFormat from NSArray
 copy this below from https://github.com/groue/GRMustache/blob/master/src/classes/Services/StandardLibrary/GRMustacheLocalizer.m
 
 
+
  /**
+ 
      * NSString formatting methods do not accept an array of format arguments.
      
      *
