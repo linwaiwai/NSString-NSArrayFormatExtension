@@ -1,6 +1,5 @@
 //
 //  NSString+NSArrayFormatExtension.h
-//  BePerfect
 //
 //  Created by linwaiwai on 9/29/14.
 //  Copyright (c) 2014 linwaiwai. All rights reserved.
