@@ -7,14 +7,11 @@ copy this below from https://github.com/groue/GRMustache/blob/master/src/classes
 
 
 
- /**
- 
+
+     /**
      * NSString formatting methods do not accept an array of format arguments.
-     
      *
-     
      * Faking va_list as in http://stackoverflow.com/questions/688070/is-there-any-way-to-pass-an-nsarray-to-a-method-that-expects-a-variable-number-o
-     
      * used to compile, but it does no longer:
      
      *
@@ -41,7 +38,6 @@ copy this below from https://github.com/groue/GRMustache/blob/master/src/classes
      * So I guess we have to do it by hand :-(
      
      */
-    
     NSUInteger count = arguments.count;
 
     id args[] = {
